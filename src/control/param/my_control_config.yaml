@@ -1,0 +1,3 @@
+/**: # namespace and node name (double stars means 'ignore')
+  ros__parameters:
+    temp_param: 0
