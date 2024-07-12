@@ -5,13 +5,14 @@
     - [Autoware](#autoware)
     - [Dummy ROS nodes](#dummy-ros-nodes)
     - [Simple user interface nodes](#simple-user-interface-nodes)
-  - [3. Prerequisite {#prerequisite}](#3-prerequisite-prerequisite)
-  - [4. Build {#build}](#4-build-build)
-  - [5. Run {#run}](#5-run-run)
+  - [3. Workspace structure {#structure}](#3-workspace-structure-structure)
+  - [4. Prerequisite {#prerequisite}](#4-prerequisite-prerequisite)
+  - [5. Build {#build}](#5-build-build)
+  - [6. Run {#run}](#6-run-run)
     - [Quick start](#quick-start)
     - [Debug](#debug)
-  - [6. Result {#result}](#6-result-result)
-  - [7. Final remarks {#final}](#7-final-remarks-final)
+  - [7. Result {#result}](#7-result-result)
+  - [8. Final remarks {#final}](#8-final-remarks-final)
     - [Contact to authors](#contact-to-authors)
 
 
@@ -24,7 +25,6 @@ This toy application is designed
 * to show blueprints of robot mobility software based on the [Autoware project](https://autoware.org/),
 * to facilliate study about the concept of ROS2 and Autoware, and
 * last but not least, to provide a working dummy mobility application for collaboration between research partners of SDI project.
-
 
 
 ## 2. Design {#design}
@@ -50,7 +50,11 @@ This can be expanded to develop a real application based on Autoware. For more i
 An autonomous driving system can provide a user interface to the user. Therefore, we provide user interface ROS nodes (i.e., service and action clients) that express several predictable scenarios. 1) `/my_object_detection_service`: returns a list of objects recognized by the robot to the user, 2) `/my_destination_action`: user requests a destination they want to go to, 3) `/my_emergency_service`: switches to manual driving in case of an emergency. These nodes are also working dummy nodes.
 
 
-## 3. Prerequisite {#prerequisite}
+## 3. Workspace structure {#structure}
+ 
+todo. repository structure
+
+## 4. Prerequisite {#prerequisite}
 While this repository is a standalone ROS2 workspace that can be build and run without Turtlebot3, it is recommended to run it with Turtlebot3 simulation or real device.
 
 This toy application is dependent on followings:
@@ -70,7 +74,7 @@ If you satisfied all prerequesites, you may success to follow all steps of follo
 
 You may see your Turtlebot3 works on your real or virtual world.
 
-## 4. Build {#build}
+## 5. Build {#build}
 
 Follow the steps to build our toy application.
 
@@ -107,7 +111,7 @@ Summary: 6 packages finished [1.11s]
 
 ```
 
-## 5. Run {#run}
+## 6. Run {#run}
 
 Before run our toy application, run turtlebot3 application first in virtual or real world, as you did in the [prerequisite section](#prerequisite)
 
@@ -159,7 +163,7 @@ To carefully see the logs of different moduels in seperate shell, execute launch
 If you want to go more deep, you can run (`ros2 run ...`) all ROS nodes defined in our workspace one by one manually without using launch files.
 
 
-## 6. Result {#result}
+## 7. Result {#result}
 
 Checking `rqt-graph` is one of the most simplest to see the status of our toy application.
 
@@ -172,7 +176,7 @@ Checking `rqt-graph` is one of the most simplest to see the status of our toy ap
 You can see the result of `rqt-graph` is mapped to the [design of toy application](#design).
 
 
-## 7. Final remarks {#final}
+## 8. Final remarks {#final}
 
 Now you have a running dummy toy application that covers ROS2, Autoware, and Turtlebot3.
 
