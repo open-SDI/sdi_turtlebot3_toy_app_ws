@@ -56,77 +56,78 @@ An autonomous driving system can provide a user interface to the user. Therefore
 ## 3. Workspace structure
  
 ```
-📦src
- ┣ 📂bringing_up            # ROS2 pakcage
- ┃ ┣ 📂launch
- ┃ ┃ ┗ 📜my_toy_bringing_up.launch.py
- ┃ ┣ 📂param
- ┃ ┃ ┗ 📜my_toy_bringing_up_config.yaml
- ┃ ┣ 📂bringing_up
- ┃ ┣ 📜package.xml
- ┃ ┣ 📜setup.cfg
- ┃ ┗ 📜setup.py
- ┗ 📂ros_node_interface     # ROS2 pakcage
- ┃ ┣ 📂action
- ┃ ┃ ┗ 📜Destination.action
- ┃ ┣ 📂msg
- ┃ ┣ 📂srv
- ┃ ┃ ┣ 📜EmergencyControl.srv
- ┃ ┃ ┗ 📜ObjectDetection.srv
- ┃ ┣ 📜CMakeLists.txt
- ┃ ┗ 📜package.xml
- ┣ 📂localization           # ROS2 pakcage, Autoware module
- ┃ ┣ 📂launch
- ┃ ┃ ┗ 📜my_localization.launch.py
- ┃ ┣ 📂param
- ┃ ┃ ┗ 📜my_localization_config.yaml
- ┃ ┣ 📂localization
- ┃ ┃ ┗ 📜my_lidar_localization.py
- ┃ ┣ 📜package.xml
- ┃ ┣ 📜setup.cfg
- ┃ ┗ 📜setup.py
- ┣ 📂perception             # ROS2 pakcage, Autoware module
- ┃ ┣ 📂launch
- ┃ ┃ ┗ 📜my_perception.launch.py
- ┃ ┣ 📂param
- ┃ ┃ ┗ 📜my_perception_config.yaml
- ┃ ┣ 📂perception
- ┃ ┃ ┣ 📜my_camera_perception.py
- ┃ ┃ ┣ 📜my_lidar_perception.py
- ┃ ┃ ┗ 📜my_object_detection_service.py
- ┃ ┣ 📜package.xml
- ┃ ┣ 📜setup.cfg
- ┃ ┗ 📜setup.py
- ┣ 📂planning               # ROS2 pakcage, Autoware module
- ┃ ┣ 📂launch
- ┃ ┃ ┗ 📜my_planning.launch.py
- ┃ ┣ 📂param
- ┃ ┃ ┗ 📜my_planning_config.yaml
- ┃ ┣ 📂planning
- ┃ ┃ ┣ 📜my_destination_action.py
- ┃ ┃ ┗ 📜my_planning.py
- ┃ ┣ 📜package.xml
- ┃ ┣ 📜setup.cfg
- ┃ ┗ 📜setup.py
- ┣ 📂control                # ROS2 pakcage, Autoware module
- ┃ ┣ 📂launch
- ┃ ┃ ┗ 📜my_control.launch.py
- ┃ ┣ 📂param
- ┃ ┃ ┗ 📜my_control_config.yaml
- ┃ ┣ 📂control
- ┃ ┃ ┣ 📜my_control.py
- ┃ ┃ ┗ 📜my_emergency_service.py
- ┃ ┣ 📜package.xml
- ┃ ┣ 📜setup.cfg
- ┃ ┗ 📜setup.py
- ┣ 📂map                    # Autoware module
- ┃ ┣ 📜sample_map_house.pgm
- ┃ ┣ 📜sample_map_house.yaml
- ┃ ┣ 📜sample_map_turtle.pgm
- ┃ ┗ 📜sample_map_turtle.yaml
-📦build                     # will be generated after build
-📦install                   # will be generated after build
-📦log                       # will be generated after build
+sdi_turtlebot3_toy_app_ws       # ROS2 workspace
+ ┃📦src
+ ┃ ┣ 📂bringing_up                # ROS2 pakcage
+ ┃ ┃ ┣ 📂launch
+ ┃ ┃ ┃ ┗ 📜my_toy_bringing_up.launch.py
+ ┃ ┃ ┣ 📂param
+ ┃ ┃ ┃ ┗ 📜my_toy_bringing_up_config.yaml
+ ┃ ┃ ┣ 📂bringing_up
+ ┃ ┃ ┣ 📜package.xml
+ ┃ ┃ ┣ 📜setup.cfg
+ ┃ ┃ ┗ 📜setup.py
+ ┃ ┗ 📂ros_node_interface         # ROS2 pakcage
+ ┃ ┃ ┣ 📂action
+ ┃ ┃ ┃ ┗ 📜Destination.action
+ ┃ ┃ ┣ 📂msg
+ ┃ ┃ ┣ 📂srv
+ ┃ ┃ ┃ ┣ 📜EmergencyControl.srv
+ ┃ ┃ ┃ ┗ 📜ObjectDetection.srv
+ ┃ ┃ ┣ 📜CMakeLists.txt
+ ┃ ┃ ┗ 📜package.xml
+ ┃ ┣ 📂localization               # ROS2 pakcage, Autoware module
+ ┃ ┃ ┣ 📂launch
+ ┃ ┃ ┃ ┗ 📜my_localization.launch.py
+ ┃ ┃ ┣ 📂param
+ ┃ ┃ ┃ ┗ 📜my_localization_config.yaml
+ ┃ ┃ ┣ 📂localization
+ ┃ ┃ ┃ ┗ 📜my_lidar_localization.py
+ ┃ ┃ ┣ 📜package.xml
+ ┃ ┃ ┣ 📜setup.cfg
+ ┃ ┃ ┗ 📜setup.py
+ ┃ ┣ 📂perception                 # ROS2 pakcage, Autoware module
+ ┃ ┃ ┣ 📂launch
+ ┃ ┃ ┃ ┗ 📜my_perception.launch.py
+ ┃ ┃ ┣ 📂param
+ ┃ ┃ ┃ ┗ 📜my_perception_config.yaml
+ ┃ ┃ ┣ 📂perception
+ ┃ ┃ ┃ ┣ 📜my_camera_perception.py
+ ┃ ┃ ┃ ┣ 📜my_lidar_perception.py
+ ┃ ┃ ┃ ┗ 📜my_object_detection_service.py
+ ┃ ┃ ┣ 📜package.xml
+ ┃ ┃ ┣ 📜setup.cfg
+ ┃ ┃ ┗ 📜setup.py
+ ┃ ┣ 📂planning                   # ROS2 pakcage, Autoware module
+ ┃ ┃ ┣ 📂launch
+ ┃ ┃ ┃ ┗ 📜my_planning.launch.py
+ ┃ ┃ ┣ 📂param
+ ┃ ┃ ┃ ┗ 📜my_planning_config.yaml
+ ┃ ┃ ┣ 📂planning
+ ┃ ┃ ┃ ┣ 📜my_destination_action.py
+ ┃ ┃ ┃ ┗ 📜my_planning.py
+ ┃ ┃ ┣ 📜package.xml
+ ┃ ┃ ┣ 📜setup.cfg
+ ┃ ┃ ┗ 📜setup.py
+ ┃ ┣ 📂control                    # ROS2 pakcage, Autoware module
+ ┃ ┃ ┣ 📂launch
+ ┃ ┃ ┃ ┗ 📜my_control.launch.py
+ ┃ ┃ ┣ 📂param
+ ┃ ┃ ┃ ┗ 📜my_control_config.yaml
+ ┃ ┃ ┣ 📂control
+ ┃ ┃ ┃ ┣ 📜my_control.py
+ ┃ ┃ ┃ ┗ 📜my_emergency_service.py
+ ┃ ┃ ┣ 📜package.xml
+ ┃ ┃ ┣ 📜setup.cfg
+ ┃ ┃ ┗ 📜setup.py
+ ┃ ┣ 📂map                        # Autoware module
+ ┃ ┃ ┣ 📜sample_map_house.pgm
+ ┃ ┃ ┣ 📜sample_map_house.yaml
+ ┃ ┃ ┣ 📜sample_map_turtle.pgm
+ ┃ ┃ ┗ 📜sample_map_turtle.yaml
+ ┃ 📦build                        # will be generated after build
+ ┃ 📦install                      # will be generated after build
+ ┃ 📦log                          # will be generated after build
 ```
 
 ## 4. Prerequisite
