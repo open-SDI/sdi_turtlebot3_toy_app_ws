@@ -70,7 +70,7 @@ An autonomous driving system can provide a user interface to the user. Therefore
  ┃ ┃ ┣ 📂bringing_up
  ┃ ┃ ┣ 📜package.xml
  ┃ ┃ ┗ 📜setup.py
- ┃ ┗ 📦ros_node_interface         # ROS2 pakcage
+ ┃ ┣ 📦ros_node_interface         # ROS2 pakcage
  ┃ ┃ ┣ 📂action
  ┃ ┃ ┃ ┗ 📜Destination.action
  ┃ ┃ ┣ 📂msg
@@ -187,9 +187,22 @@ Finished <<< localization [0.77s]
 Summary: 6 packages finished [1.11s]
 ```
 
+3. Source the setup files
+
+After build, you must run `install/local_setup.bash` for every terminal before you run ROS applications.
+
+```console
+xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws/install$     source local_setup.bash
+```
+
+We recommend you to add sourcing to your shell startup script. Refer [this](https://docs.ros.org/en/foxy/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html#add-sourcing-to-your-shell-startup-script)
+
+
 ## 6. Run
 
 Before running our toy application, first run the turtlebot3 application in a virtual or real world, as you did in [prerequisite section](#4-prerequisite).
+
+
 
 There are multiple ways to run applications in ROS2 (e.g., launch, run, etc.). 
 
@@ -240,7 +253,7 @@ This can be done using the `ros2 run ...` command.
 
 ### User interface nodes
 
-There are three user interface nodes: `perception/my_object_detection_service.py`, `planning/my_destination_action.py`, and `control/my_emergency_service.py`.
+There are also three user interface nodes: `perception/my_object_detection_service.py`, `planning/my_destination_action.py`, and `control/my_emergency_service.py`.
 
 You can run each of them in different terminals when above launches are running. 
 
