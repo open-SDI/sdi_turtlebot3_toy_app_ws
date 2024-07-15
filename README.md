@@ -192,7 +192,7 @@ Summary: 6 packages finished [1.11s]
 After build, you must run `install/local_setup.bash` for every terminal before you run ROS applications.
 
 ```console
-xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws/install$     source local_setup.bash
+xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$     source ./install/local_setup.bash
 ```
 
 We recommend you to add sourcing to your shell startup script. Refer [this](https://docs.ros.org/en/foxy/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html#add-sourcing-to-your-shell-startup-script)
