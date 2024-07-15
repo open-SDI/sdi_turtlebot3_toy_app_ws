@@ -60,7 +60,7 @@ An autonomous driving system can provide a user interface to the user. Therefore
  ┣ 📂bringing_up            # ROS2 pakcage
  ┃ ┣ 📂launch
  ┃ ┃ ┗ 📜my_toy_bringing_up.launch.py
- ┃ ┣ 📂config
+ ┃ ┣ 📂param
  ┃ ┃ ┗ 📜my_toy_bringing_up_config.yaml
  ┃ ┣ 📂bringing_up
  ┃ ┣ 📜package.xml
