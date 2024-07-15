@@ -37,6 +37,7 @@ In this section, we briefly introduce three key concepts of the design of this t
 ### Autoware
 Our toy application mimics [the autonomous driving system architecture of Autoware](https://autowarefoundation.github.io/autoware-documentation/main/design/autoware-architecture/).
 Autoware's autonomous driving system architecture consists of 7 core modules.
+Each module corresponds to its own ROS package.
 To utilize turtlebot3, we reuse the ROS2 nodes provided by turtlebot3 for the sensing, vehicle interface, and map modules.
 
 
