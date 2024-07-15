@@ -65,7 +65,6 @@ sdi_turtlebot3_toy_app_ws       # ROS2 workspace
  ┃ ┃ ┃ ┗ 📜my_toy_bringing_up_config.yaml
  ┃ ┃ ┣ 📂bringing_up
  ┃ ┃ ┣ 📜package.xml
- ┃ ┃ ┣ 📜setup.cfg
  ┃ ┃ ┗ 📜setup.py
  ┃ ┗ 📂ros_node_interface         # ROS2 pakcage
  ┃ ┃ ┣ 📂action
@@ -84,7 +83,6 @@ sdi_turtlebot3_toy_app_ws       # ROS2 workspace
  ┃ ┃ ┣ 📂localization
  ┃ ┃ ┃ ┗ 📜my_lidar_localization.py
  ┃ ┃ ┣ 📜package.xml
- ┃ ┃ ┣ 📜setup.cfg
  ┃ ┃ ┗ 📜setup.py
  ┃ ┣ 📂perception                 # ROS2 pakcage, Autoware module
  ┃ ┃ ┣ 📂launch
@@ -96,7 +94,6 @@ sdi_turtlebot3_toy_app_ws       # ROS2 workspace
  ┃ ┃ ┃ ┣ 📜my_lidar_perception.py
  ┃ ┃ ┃ ┗ 📜my_object_detection_service.py
  ┃ ┃ ┣ 📜package.xml
- ┃ ┃ ┣ 📜setup.cfg
  ┃ ┃ ┗ 📜setup.py
  ┃ ┣ 📂planning                   # ROS2 pakcage, Autoware module
  ┃ ┃ ┣ 📂launch
@@ -107,7 +104,6 @@ sdi_turtlebot3_toy_app_ws       # ROS2 workspace
  ┃ ┃ ┃ ┣ 📜my_destination_action.py
  ┃ ┃ ┃ ┗ 📜my_planning.py
  ┃ ┃ ┣ 📜package.xml
- ┃ ┃ ┣ 📜setup.cfg
  ┃ ┃ ┗ 📜setup.py
  ┃ ┣ 📂control                    # ROS2 pakcage, Autoware module
  ┃ ┃ ┣ 📂launch
@@ -118,7 +114,6 @@ sdi_turtlebot3_toy_app_ws       # ROS2 workspace
  ┃ ┃ ┃ ┣ 📜my_control.py
  ┃ ┃ ┃ ┗ 📜my_emergency_service.py
  ┃ ┃ ┣ 📜package.xml
- ┃ ┃ ┣ 📜setup.cfg
  ┃ ┃ ┗ 📜setup.py
  ┃ ┣ 📂map                        # Autoware module
  ┃ ┃ ┣ 📜sample_map_house.pgm
