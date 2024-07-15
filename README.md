@@ -154,14 +154,14 @@ Follow the steps to build our toy application.
 1. Clone our toy application workspace.
 
 ```console
-xxx@xxx:{your_directory}$   git clone https://github.com/yongjunshin/sdi_turtlebot3_toy_app_ws.git
+xxx@xxx:{your_path}$   git clone https://github.com/yongjunshin/sdi_turtlebot3_toy_app_ws.git
 ```
 
 2. Build all packages in the workspacae
 
 ```console
-xxx@xxx:{your_directory}$   cd sdi_turtlebot3_toy_app_ws
-xxx@xxx:{your_directory}/sdi_turtlebot3_toy_app_ws$     colcon build --symlink-install
+xxx@xxx:{your_path}$   cd sdi_turtlebot3_toy_app_ws
+xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$     colcon build --symlink-install
 ```
 
 This will show following outputs.
@@ -202,7 +202,7 @@ Note: The "bringing up" package is a popular approach in ROS projects. It typica
 1. Launch `my_toy_bringing_up.launch.py` in the workspace.
 
 ```console
-xxx@xxx:{your_directory}/sdi_turtlebot3_toy_app_ws$     ros2 launch bringing_up my_toy_bringing_up.launch.py
+xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$     ros2 launch bringing_up my_toy_bringing_up.launch.py
 ```
 
 ### Debug
@@ -212,25 +212,25 @@ To carefully examine the logs of different modules in separate shells, execute l
 1. Launch `my_localization.launch.py` in the workspace.
 
 ```console
-xxx@xxx:{your_directory}/sdi_turtlebot3_toy_app_ws$     ros2 launch localization my_localization.launch.py
+xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$     ros2 launch localization my_localization.launch.py
 ```
 
 2. Launch `my_perception.launch.py` in the workspace.
 
 ```console
-xxx@xxx:{your_directory}/sdi_turtlebot3_toy_app_ws$     ros2 launch perception my_perception.launch.py
+xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$     ros2 launch perception my_perception.launch.py
 ```
 
 3. Launch `my_planning.launch.py` in the workspace.
 
 ```console
-xxx@xxx:{your_directory}/sdi_turtlebot3_toy_app_ws$     ros2 launch planning my_planning.launch.py
+xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$     ros2 launch planning my_planning.launch.py
 ```
 
 4. Launch `my_control.launch.py` in the workspace.
 
 ```console
-xxx@xxx:{your_directory}/sdi_turtlebot3_toy_app_ws$     ros2 launch control my_control.launch.py
+xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$     ros2 launch control my_control.launch.py
 ```
 
 If you want to delve deeper, you can manually run all ROS nodes defined in our workspace one by one without using launch files. 
@@ -244,13 +244,13 @@ There are three user interface nodes: `perception/my_object_detection_service.py
 You can run each of them in different terminals when above launches are running. 
 
 ```console
-xxx@xxx:{your_directory}/sdi_turtlebot3_toy_app_ws$     ros2 run perception my_object_detection_service
+xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$     ros2 run perception my_object_detection_service
 ```
 ```console
-xxx@xxx:{your_directory}/sdi_turtlebot3_toy_app_ws$     ros2 run planning my_destination_action
+xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$     ros2 run planning my_destination_action
 ```
 ```console
-xxx@xxx:{your_directory}/sdi_turtlebot3_toy_app_ws$     ros2 run control my_emergency_service
+xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$     ros2 run control my_emergency_service
 ```
 
 Current interface nodes are dummy nodes, so gets random or arbitrary inputs. Please check their short dummy codes.
@@ -261,7 +261,7 @@ Current interface nodes are dummy nodes, so gets random or arbitrary inputs. Ple
 Checking `rqt_graph` is one of the simplest ways to see the status of our toy application.
 
 ```console
-xxx@xxx:{your_directory}/sdi_turtlebot3_toy_app_ws$     rqt-graph
+xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$     rqt-graph
 ```
 
 ![ROS graph of running toy application](docs/figures/toy_app_ros_graph.png)
