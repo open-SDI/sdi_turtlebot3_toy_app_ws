@@ -191,9 +191,7 @@ There are multiple ways to run applications in ROS2 (e.g., launch, run, etc.).
 
 Here, we introduce two simple ways to launch our toy application: "*quick start*" and "*debug*". Both methods result in the same final state.
 
-
 ### Quick start
-
 
 To quickly bring up all toy application nodes at once, launch the "bringing up".
 
@@ -236,7 +234,6 @@ xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$     ros2 launch control my_contro
 If you want to delve deeper, you can manually run all ROS nodes defined in our workspace one by one without using launch files. 
 This can be done using the `ros2 run ...` command.
 
-
 ### User interface nodes
 
 There are three user interface nodes: `perception/my_object_detection_service.py`, `planning/my_destination_action.py`, and `control/my_emergency_service.py`.
@@ -255,7 +252,6 @@ xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$     ros2 run control my_emergency
 
 Current interface nodes are dummy nodes, so gets random or arbitrary inputs. Please check their short dummy codes.
 
-
 ## 7. Result
 
 Checking `rqt_graph` is one of the simplest ways to see the status of our toy application.
@@ -267,7 +263,6 @@ xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$     rqt-graph
 ![ROS graph of running toy application](docs/figures/toy_app_ros_graph.png)
 
 You can see that the result of `rqt_graph` corresponds to the [design of toy application](#2-design).
-
 
 
 ## 8. Final remarks 
