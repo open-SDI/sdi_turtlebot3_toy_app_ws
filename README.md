@@ -57,9 +57,9 @@ An autonomous driving system can provide a user interface to the user. Therefore
 ## 3. Workspace structure
  
 ```
-sdi_turtlebot3_toy_app_ws       # ROS2 workspace
- ┣📦src
- ┃ ┣ 📂bringing_up                # ROS2 pakcage
+ 📂sdi_turtlebot3_toy_app_ws    # ROS2 workspace
+ ┣ 📂src
+ ┃ ┣ 📦bringing_up                # ROS2 pakcage
  ┃ ┃ ┣ 📂launch
  ┃ ┃ ┃ ┗ 📜my_toy_bringing_up.launch.py
  ┃ ┃ ┣ 📂param
@@ -67,7 +67,7 @@ sdi_turtlebot3_toy_app_ws       # ROS2 workspace
  ┃ ┃ ┣ 📂bringing_up
  ┃ ┃ ┣ 📜package.xml
  ┃ ┃ ┗ 📜setup.py
- ┃ ┗ 📂ros_node_interface         # ROS2 pakcage
+ ┃ ┗ 📦ros_node_interface         # ROS2 pakcage
  ┃ ┃ ┣ 📂action
  ┃ ┃ ┃ ┗ 📜Destination.action
  ┃ ┃ ┣ 📂msg
@@ -76,7 +76,7 @@ sdi_turtlebot3_toy_app_ws       # ROS2 workspace
  ┃ ┃ ┃ ┗ 📜ObjectDetection.srv
  ┃ ┃ ┣ 📜CMakeLists.txt
  ┃ ┃ ┗ 📜package.xml
- ┃ ┣ 📂localization               # ROS2 pakcage, Autoware module
+ ┃ ┣ 📦localization               # ROS2 pakcage, Autoware module
  ┃ ┃ ┣ 📂launch
  ┃ ┃ ┃ ┗ 📜my_localization.launch.py
  ┃ ┃ ┣ 📂param
@@ -85,7 +85,7 @@ sdi_turtlebot3_toy_app_ws       # ROS2 workspace
  ┃ ┃ ┃ ┗ 📜my_lidar_localization.py
  ┃ ┃ ┣ 📜package.xml
  ┃ ┃ ┗ 📜setup.py
- ┃ ┣ 📂perception                 # ROS2 pakcage, Autoware module
+ ┃ ┣ 📦perception                 # ROS2 pakcage, Autoware module
  ┃ ┃ ┣ 📂launch
  ┃ ┃ ┃ ┗ 📜my_perception.launch.py
  ┃ ┃ ┣ 📂param
@@ -96,7 +96,7 @@ sdi_turtlebot3_toy_app_ws       # ROS2 workspace
  ┃ ┃ ┃ ┗ 📜my_object_detection_service.py
  ┃ ┃ ┣ 📜package.xml
  ┃ ┃ ┗ 📜setup.py
- ┃ ┣ 📂planning                   # ROS2 pakcage, Autoware module
+ ┃ ┣ 📦planning                   # ROS2 pakcage, Autoware module
  ┃ ┃ ┣ 📂launch
  ┃ ┃ ┃ ┗ 📜my_planning.launch.py
  ┃ ┃ ┣ 📂param
@@ -106,7 +106,7 @@ sdi_turtlebot3_toy_app_ws       # ROS2 workspace
  ┃ ┃ ┃ ┗ 📜my_planning.py
  ┃ ┃ ┣ 📜package.xml
  ┃ ┃ ┗ 📜setup.py
- ┃ ┣ 📂control                    # ROS2 pakcage, Autoware module
+ ┃ ┣ 📦control                    # ROS2 pakcage, Autoware module
  ┃ ┃ ┣ 📂launch
  ┃ ┃ ┃ ┗ 📜my_control.launch.py
  ┃ ┃ ┣ 📂param
@@ -121,9 +121,9 @@ sdi_turtlebot3_toy_app_ws       # ROS2 workspace
  ┃ ┃ ┣ 📜sample_map_house.yaml
  ┃ ┃ ┣ 📜sample_map_turtle.pgm
  ┃ ┃ ┗ 📜sample_map_turtle.yaml
- ┣ 📦build                        # will be generated after build
- ┣ 📦install                      # will be generated after build
- ┗ 📦log                          # will be generated after build
+ ┣ 📂build                        # will be generated after build
+ ┣ 📂install                      # will be generated after build
+ ┗ 📂log                          # will be generated after build
 ```
 
 ## 4. Prerequisite
