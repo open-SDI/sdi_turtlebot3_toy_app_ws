@@ -1,0 +1,8 @@
+# Goal
+string destination
+---
+# Result
+float32 diff_to_destination
+---
+# Feedback
+float32 diff_to_destination

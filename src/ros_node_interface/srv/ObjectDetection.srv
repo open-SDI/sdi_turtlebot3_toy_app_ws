@@ -1,0 +1,5 @@
+# Request
+int8 duration
+---
+# Response
+string[] objects

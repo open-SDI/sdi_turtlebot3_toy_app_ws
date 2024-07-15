@@ -1,0 +1,5 @@
+# Request
+bool emergency_control_request
+---
+# Response
+string control_holder
