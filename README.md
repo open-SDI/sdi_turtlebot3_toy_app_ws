@@ -1,5 +1,5 @@
-> [!CAUTION]  
-> An error of missing `ros_node_interface` pakcage was fixed at 2024-07-15-14:00.
+> [!IMPORTANT]  
+> ❗An error of missing `ros_node_interface` pakcage was fixed at 2024-07-15-14:00.
 
 # sdi_turtlebot3_toy_app_ws
 
