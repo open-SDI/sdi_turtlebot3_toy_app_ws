@@ -158,7 +158,7 @@ Follow the steps to build our toy application.
 1. Clone our toy application workspace.
 
 ```console
-{your_directory}$   git clone https://github.com/yongjunshin/sdi_turtlebot3_toy_app_ws.git
+xxx@xxx:{your_directory}$   git clone https://github.com/yongjunshin/sdi_turtlebot3_toy_app_ws.git
 ```
 
 2. Build all packages in the workspacae
