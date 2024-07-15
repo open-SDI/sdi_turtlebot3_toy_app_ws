@@ -166,7 +166,7 @@ xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$     colcon build --symlink-instal
 
 This will show following outputs.
 ```console
-xxx@xxx:~/sdi_turtlebot3_toy_app_ws$ colcon build --symlink-install
+xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$ colcon build --symlink-install
 Starting >>> ros_node_interface
 Starting >>> bringing_up
 Finished <<< ros_node_interface [0.22s]                                     
@@ -195,7 +195,7 @@ Here, we introduce two simple ways to launch our toy application: "*quick start*
 
 To quickly bring up all toy application nodes at once, launch the "bringing up".
 
-Note: The "bringing up" package is a popular approach in ROS projects. It typically includes launch files for execution scenarios that use multiple ROS nodes spread across several packages.
+Note: The "bringing up" package is a popular approach in ROS projects. It includes launch files for execution scenarios that use multiple ROS nodes spread across several packages.
 
 1. Launch `my_toy_bringing_up.launch.py` in the workspace.
 
