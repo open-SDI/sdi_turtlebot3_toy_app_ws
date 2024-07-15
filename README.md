@@ -57,7 +57,7 @@ An autonomous driving system can provide a user interface to the user. Therefore
  
 ```
 sdi_turtlebot3_toy_app_ws       # ROS2 workspace
- ┃📦src
+ ┣📦src
  ┃ ┣ 📂bringing_up                # ROS2 pakcage
  ┃ ┃ ┣ 📂launch
  ┃ ┃ ┃ ┗ 📜my_toy_bringing_up.launch.py
@@ -120,9 +120,9 @@ sdi_turtlebot3_toy_app_ws       # ROS2 workspace
  ┃ ┃ ┣ 📜sample_map_house.yaml
  ┃ ┃ ┣ 📜sample_map_turtle.pgm
  ┃ ┃ ┗ 📜sample_map_turtle.yaml
- ┃ 📦build                        # will be generated after build
- ┃ 📦install                      # will be generated after build
- ┃ 📦log                          # will be generated after build
+ ┣ 📦build                        # will be generated after build
+ ┣ 📦install                      # will be generated after build
+ ┗ 📦log                          # will be generated after build
 ```
 
 ## 4. Prerequisite
