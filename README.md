@@ -1,6 +1,9 @@
 > [!IMPORTANT]  
 > ❗An error of missing `ros_node_interface` pakcage was fixed at 2024-07-15-14:00.
 
+> [!NOTE]
+> Address of this repository was changed from `https://github.com/yongjunshin/sdi_turtlebot3_toy_app_ws.git` to `https://github.com/open-SDI/sdi_turtlebot3_toy_app_ws.git`, but DON'T WORRY because the previous address still works!
+
 # sdi_turtlebot3_toy_app_ws
 
 **Table of contents**
