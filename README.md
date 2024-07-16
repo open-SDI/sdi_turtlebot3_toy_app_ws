@@ -158,7 +158,7 @@ Follow the steps to build our toy application.
 1. Clone our toy application workspace.
 
 ```console
-xxx@xxx:{your_path}$   git clone https://github.com/yongjunshin/sdi_turtlebot3_toy_app_ws.git
+xxx@xxx:{your_path}$   git clone https://github.com/open-SDI/sdi_turtlebot3_toy_app_ws.git
 ```
 
 2. Build all packages in the workspacae
@@ -168,7 +168,8 @@ xxx@xxx:{your_path}$   cd sdi_turtlebot3_toy_app_ws
 xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$     colcon build --symlink-install
 ```
 
-This will show following outputs.
+This will show following outputs, and make "build", "install", and "log" directories.
+
 ```console
 xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$ colcon build --symlink-install
 Starting >>> ros_node_interface
@@ -195,7 +196,7 @@ After build, you must run `install/local_setup.bash` for every terminal before y
 xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$     source ./install/local_setup.bash
 ```
 
-We recommend you to add sourcing to your shell startup script. Refer [this](https://docs.ros.org/en/foxy/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html#add-sourcing-to-your-shell-startup-script)
+We recommend you to add sourcing to your shell startup script. Refer [this](https://docs.ros.org/en/foxy/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html#add-sourcing-to-your-shell-startup-script).
 
 
 ## 6. Run
