@@ -288,9 +288,12 @@ You can see that the result of `rqt_graph` corresponds to the [design of toy app
 
 ## 8. Final remarks 
 
-Now you have an awsome running dummy toy application that covers ROS2, Autoware, and Turtlebot3.
+You have an awesome running dummy toy application that covers ROS2, Autoware, and Turtlebot3.
 
-You can extend this skeleton application for your own purposes. Enjoy exploring and developing! 😉
+This repository works as a skeleton code base, so it may be kept as simple as possible without adding many fancy functions in the future.
+Despite this, any issues, pull requests, or suggestions for improvement are welcome.
+
+Now, you can fork and extend this skeleton application for your own purposes. Enjoy exploring and developing! 😉
 
 ### Contact to authors
 
