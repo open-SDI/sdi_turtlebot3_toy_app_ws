@@ -291,4 +291,4 @@ You can extend this skeleton application for your own purposes. Enjoy exploring 
 
 ### Contact to authors
 
-* Dr. Yong-Jun Shin (ETRI): 📧 yjshin@etri.re.kr , [🎓](https://scholar.google.co.kr/citations?user=REwEK_wAAAAJ&hl=ko), [🏠](https://yongjunshin.github.io/),  
+* Dr. Yong-Jun Shin (ETRI): 📧 yjshin@etri.re.kr , [🎓](https://scholar.google.co.kr/citations?user=REwEK_wAAAAJ&hl=ko), [🏠](https://yongjunshin.github.io/)
