@@ -1,10 +1,11 @@
+![header](https://capsule-render.vercel.app/api?type=waving&height=170&color=gradient&text=SDI%20Turtlebot3%20Toy%20App%20Workspace&textBg=false&fontSize=40&fontColor=000000&descAlignY=50&fontAlignY=30)
+
 > [!IMPORTANT]  
 > ❗An error of missing `ros_node_interface` pakcage was fixed at 2024-07-15-14:00.
 
 > [!NOTE]
 > Address of this repository was changed from `https://github.com/yongjunshin/sdi_turtlebot3_toy_app_ws.git` to `https://github.com/open-SDI/sdi_turtlebot3_toy_app_ws.git`, but DON'T WORRY because the previous address still works!
 
-# sdi_turtlebot3_toy_app_ws
 
 **Table of contents**
 - [1. Introduction](#1-introduction)
@@ -206,11 +207,11 @@ We recommend you to add sourcing to your shell startup script. Refer [this](http
 
 Before running our toy application, first run the turtlebot3 application in a virtual or real world, as you did in [prerequisite section](#4-prerequisite).
 
-
-
 There are multiple ways to run applications in ROS2 (e.g., launch, run, etc.). 
 
 Here, we introduce two simple ways to launch our toy application: "*quick start*" and "*debug*". Both methods result in the same final state.
+
+In addition, a manual to run "*User interface nodes*" is seperately proivded.
 
 ### Quick start
 
@@ -226,7 +227,7 @@ xxx@xxx:{your_path}/sdi_turtlebot3_toy_app_ws$     ros2 launch bringing_up my_to
 
 ### Debug
 
-To carefully examine the logs of different modules in separate shells, execute launch files for each package in different shells.
+To carefully examine the logs of different modules in separate terminals, execute launch files for each package in different terminals.
 
 1. Launch `my_localization.launch.py` in the workspace.
 
